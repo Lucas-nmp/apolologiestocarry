@@ -1,0 +1,48 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff8f0;
+  border-bottom: 1px solid #e0d6cc;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b24d2f;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #b24d2f;
+}
+
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.navbar-menu a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  border-top: 1px solid #eee;
+}
+
+/* Cuando el menú está activo */
+.navbar-menu.open {
+  display: flex;
+}
