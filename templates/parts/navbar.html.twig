@@ -3,19 +3,19 @@
     <div class="navbar-brand">
       <span class="brand-text">Disculpas para Llevar</span>
     </div>
+    <nav id="mobile-menu" class="navbar-menu">
+      <a href="{{ path('app_home') }}">{{ 'Inicio'|trans }}</a>
+      <a href="#desayunos">{{ 'Desayunos'|trans }}</a>
+      <a href="#como-funciona">{{ '¿Cómo funciona?'|trans }}</a>
+      <a href="">{{ 'Opiniones'|trans }}</a>
+      <a href="#contacto">{{ 'Contacto'|trans }}</a>
+    </nav>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
       ☰
     </button>
   </div>
-
-  <nav id="mobile-menu" class="navbar-menu">
-    <a href="{{ path('app_home') }}">{{'Inicio'|trans}}</a>
-    <a href="#desayunos">{{'Desayunos'|trans}}</a>
-    <a href="#como-funciona">{{'¿Cómo funciona?'|trans}}</a>
-    <a href="">{{'Opiniones'|trans}}</a>
-    <a href="#contacto">{{'Contacto'|trans}}</a>
-  </nav>
 </header>
+
 
 <script>
     function toggleMenu() {
